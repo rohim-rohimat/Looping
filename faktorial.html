@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // for
+        let faktorial = 1
+        let angka = 5
+        for (let n = 1; n <= angka; n++){
+            faktorial *= n ;
+        }
+        console.log('angka' + 'faktorial' + 'adalah',faktorial)
+        document.write (`faktorial dari ${angka} adalah ${faktorial}`)
+        // end for
+
+        // while
+        let f = 1
+        let ang = 5
+        let z = 1
+        while (z <= ang){
+            f *= z
+            console.log(`faktorial dari ${ang} adalah ${f}`)
+            z++  
+        }
+        // end while
+
+        // do while
+        let f = 1
+        let a = 5
+        let v = 1
+        do {
+            f *= v
+            console.log(`faktorial dari ${a} adalah ${f}`)
+            v++
+        }
+        while (v <= 5)
+        // end do while
+
+
+
+        // Tahun Kabisat
+        for (let tahun = 1600 ; tahun <= 2024; tahun++){
+            if ( tahun % 400 == 0){
+                console.log (`${tahun} tahun kabisat`)
+            }
+            else if (tahun % 100 == 0){
+                console.log (`${tahun} bukan tahun kabisat`)
+            }
+            else if ( tahun % 4 == 0){
+                console.log (`${tahun} tahun kabisat`)
+            }
+        }
+    </script>
+</body>
+</html>
